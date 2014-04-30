@@ -1,0 +1,19 @@
+Source: python-certifi
+Section: python
+Priority: optional
+Maintainer: Sebastien Badia <seb@sebian.fr>
+Build-Depends: debhelper (>= 9), python-setuptools, python-all (>= 2.6.6-3~)
+Standards-Version: 3.9.5
+Homepage: http://python-requests.org
+
+Package: python-certifi
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${python:Depends}, ${misc:Depends}
+Recommends: ${python:Recommends}
+Description: Python SSL Certificates
+ This installable Python package contains a CA Bundle that you can reference
+ in your Python code. This is useful for verifying HTTP requests, for example.
+ .
+ This is the same CA Bundle which ships with the Requests codebase, and is
+ derived from Mozilla Firefox's canonical set.
